@@ -1,1 +1,44 @@
-// TODO
+.headerContainer{
+  width: 100%;
+  height: 8rem;
+}
+
+.headerContent{
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    margin-left: -30%;
+  }
+
+  span{
+    font-weight: bold;
+    font-size: 1.75rem;
+  }
+  p{
+    font-size: 1.125rem;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    color: var(--gray-100);
+  }
+
+  time{
+    display: inline-block;
+    padding-top: 1.5rem;
+    color: var(--gray-350);
+    & + time{
+      margin-left: 1.5rem;
+    }
+    .icon{
+      margin-right: 0.5rem;
+    }
+  }
+
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
